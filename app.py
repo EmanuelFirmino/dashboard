@@ -8,6 +8,8 @@ import warnings
 import numpy as np
 from auth import require_login, logout_button
 
+st.set_page_config(page_title="SobreVIDA - Dashboard", layout="wide", initial_sidebar_state="expanded")
+
 # 🔒 Exigir login antes de mostrar conteúdo
 require_login()
 
@@ -23,7 +25,6 @@ DB_PATH = "violencia.db"
 SHAPE_PATH = "bairros_ll.geojson"
 SHAPE_COL = "BAIRRO_PAD"
 
-st.set_page_config(page_title="SobreVIDA - Dashboard", layout="wide", initial_sidebar_state="expanded")
 st.title("♀️ SobreVIDA — Violência entre Parceiros Íntimos (Dashboard)")
 
 # -----------------------
