@@ -9,10 +9,10 @@ import numpy as np
 from auth import require_login, logout_button
 
 # 🔒 Exigir login antes de mostrar conteúdo
-#require_login()
+require_login()
 
 # 🔓 Botão de logout
-#logout_button()
+logout_button()
 
 warnings.filterwarnings("ignore")
 
